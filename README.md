@@ -1,2 +1,2 @@
-# Digital-Calculator-
-Final Project for Web Application Engineering Class
+# Digital-Calculator
+Final Project for Web Application Engineering Class 
