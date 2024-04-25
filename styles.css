@@ -1,0 +1,49 @@
+html, body {
+    background-color: grey;
+    margin: 0; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.table {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    background-color: black; 
+    padding: 10px; 
+    border-radius: 4%; 
+    border: none;
+}
+
+.table th, .table td{
+    border: none;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    text-align: center;
+    font-size: x-large;
+    background-color: #505050; 
+    color: white; 
+    border: none; 
+    flex: none; 
+}
+
+#operator :hover {
+    background-color: white;
+}
+
+#operator {
+    background-color: orange;
+}
+
+
+
+#zero {
+    width: 110px; 
+    border-radius: 25px; 
+}
