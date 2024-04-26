@@ -6,6 +6,10 @@ html, body {
     justify-content: center; 
     align-items: center; 
 }
+input{
+   position: relative;
+   width: 300px;
+}
 
 .table {
     display: flex; 
@@ -41,6 +45,13 @@ html, body {
     background-color: orange;
 }
 
+#equal-sign :hover {
+    background-color: white;
+}
+
+#equal-sign {
+    background-color: orange;
+}
 
 
 #zero {
