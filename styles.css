@@ -1,5 +1,5 @@
 html, body {
-    background-color: grey;
+    background-color: var(--background-color, #212121); 
     margin: 0; 
     height: 100%; 
     display: flex; 
@@ -15,7 +15,7 @@ input{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
-    background-color: black; 
+    background-color: var(--table-background, #000000); 
     padding: 10px; 
     border-radius: 4%; 
     border: none;
@@ -31,30 +31,67 @@ input{
     border-radius: 50%; 
     text-align: center;
     font-size: x-large;
-    background-color: #505050; 
-    color: white; 
+    color: #ffffff;
+    background-color: var(--button-background, #424242); 
     border: none; 
     flex: none; 
 }
 
 #operator :hover {
-    background-color: white;
+    background-color: #ffffff; 
 }
 
 #operator {
-    background-color: orange;
+    background-color: var(--operator-button, #cd8500); 
 }
 
 #equal-sign :hover {
-    background-color: white;
+    background-color: #ffffff; 
 }
 
 #equal-sign {
-    background-color: orange;
+    background-color: var(--equal-sign-button, #cd8500); 
 }
-
 
 #zero {
     width: 110px; 
     border-radius: 25px; 
 }
+
+.display {
+    width: 218px; 
+    height: 50px; 
+    font-size: 24px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: none; 
+}   
+
+.dropdown-toggle {
+    height: 49px;
+    width: 49px; 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    border-radius: 5px;
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 13px;
+    margin-right: 11px;
+}
+
+.dropdown-toggle::after {
+    content: none; 
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 35px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
