@@ -9,10 +9,18 @@ function clearDisplay(){
 }
 
 function calculate(){
-    try{
-        display.value = eval(display.value);
-    }
-    catch(error){
+    try {
+        // Evaluate the expression
+        let result = eval(display.value);
+
+        // Check if the result is Infinity, -Infinity, or NaN (division by zero scenarios)
+        if (!isFinite(result) || isNaN(result)) {
+            display.value = "Error";
+        } else {
+            display.value = result;
+        }
+    } catch (error) {
+        // Handle other types of errors
         display.value = "Error";
     }
 }
