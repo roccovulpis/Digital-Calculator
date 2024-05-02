@@ -128,6 +128,13 @@ function applyThemeOnClick(event) {
     }
 }
 
+function toPercentage() {
+    const currentValue = display.value;
+    if (currentValue) {
+        display.value = (parseFloat(currentValue) / 100).toString();
+    }
+}
+
 document.addEventListener('click', function(event) {
     closeDropdownOnClickOutside(event);
     applyThemeOnClick(event);
