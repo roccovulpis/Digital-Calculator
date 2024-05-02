@@ -35,6 +35,10 @@ input{
     background-color: var(--button-background, #424242); 
     border: none; 
     flex: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #operator :hover {
